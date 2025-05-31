@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Code and Output</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 20px;">
+
+<div class="container" style="max-width: 800px; margin: auto; padding: 20px; background-color: #ffffff; border: 1px solid #ccc; border-radius: 8px;">
+    <h1 style="text-align: center; color: #333;">Simple C Code and Output</h1>
+
+    <div class="code" style="margin-bottom: 30px;">
+        <h3 style="color: #2c3e50;">C Code: Hello World</h3>
+        <pre style="background-color: #f0f0f0; padding: 10px; border-left: 5px solid #3498db;">
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\\n");
+    return 0;
+}
+        </pre>
+    </div>
+
+    <div class="image" style="margin-bottom: 30px;">
+        <h3 style="color: #2c3e50;">Output Image: Hello World</h3>
+        <img src="hi.png.png" alt="C Code Output Image" style="max-width: 100%; border: 1px solid #ccc;">
+    </div>
+
+    <div class="code" style="margin-bottom: 30px;">
+        <h3 style="color: #2c3e50;">C Code: Even or Odd Check</h3>
+        <pre style="background-color: #f0f0f0; padding: 10px; border-left: 5px solid #27ae60;">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num % 2 == 0) {
+        printf("%d is even.\\n", num);
+    } else {
+        printf("%d is odd.\\n", num);
+    }
+
+    return 0;
+}
+        </pre>
+    </div>
+
+    <div class="image" style="margin-bottom: 30px;">
+        <h3 style="color: #2c3e50;">Output Image: Even or Odd</h3>
+        <img src="hello.png" alt="C Code Output Image" style="max-width: 100%; border: 1px solid #ccc;">
+    </div>
+
+    <div class="code" style="margin-bottom: 30px;">
+        <h3 style="color: #2c3e50;">C Code: Factorial Calculation</h3>
+        <pre style="background-color: #f0f0f0; padding: 10px; border-left: 5px solid #e67e22;">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num, i;
+    long long fact = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for(i = 1; i <= num; i++) {
+        fact *= i;
+    }
+
+    printf("Factorial of %d = %lld\\n", num, fact);
+    return 0;
+}
+        </pre>
+    </div>
+
+    <div class="image">
+        <h3 style="color: #2c3e50;">Output Image: Factorial Calculation</h3>
+        <img src="how.png" alt="C Code Output Image" style="max-width: 100%; border: 1px solid #ccc;">
+    </div>
+
+</div>
+
+</body>
+</html>
