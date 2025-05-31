@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Code: Types of Errors</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+
+    <div style="max-width: 800px; margin: auto; background-color: #ffffff; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+        <h1 style="text-align: center; color: #c0392b;">C Code: Syntax, Semantic, and Logical Errors</h1>
+
+        <pre style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #e74c3c; overflow-x: auto;">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 10;
+    int b = 0;
+
+    // Syntax Error: Missing semicolon
+    printf("Hello, World!") // Error: expected ';' before '}' token
+
+    // Semantic Error: Division by zero
+    int c = a / b; // Error: division by zero
+
+    // Logical Error: Incorrect calculation
+    int d = a * 2; // Error: should be 'a + 2' instead of 'a * 2'
+
+    printf("Result: %d\n", d);
+    return 0;
+}
+        </pre>
+
+        <p style="color: #555;"><strong>Note:</strong> This code contains intentional errors to demonstrate:</p>
+        <ul style="color: #333;">
+            <li><strong>Syntax Error:</strong> Missing semicolon after printf.</li>
+            <li><strong>Semantic Error:</strong> Dividing a number by zero.</li>
+            <li><strong>Logical Error:</strong> Multiplication used where addition was intended.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
