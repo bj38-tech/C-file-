@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C Pyramid Patterns Code</title>
+</head>
+<body style="font-family: monospace; background-color: #f9f9f9; color: #333; padding: 20px;">
+
+    <h1 style="color: #2c3e50;">C Program to Print Pyramid Patterns</h1>
+
+    <pre style="background-color: #fff; padding: 15px; border: 1px solid #ccc; overflow-x: auto;">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i, j, rows;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    // 1. Right Side Pyramid
+    printf("\n1. Right Side Pyramid:\n");
+    for (i = 1; i <= rows; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    // 2. Left Side Pyramid
+    printf("\n2. Left Side Pyramid:\n");
+    for (i = 1; i <= rows; i++) {
+        for (j = 1; j <= rows - i; j++) {
+            printf(" ");
+        }
+        for (j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    // 3. Inverse Right Side Pyramid
+    printf("\n3. Inverse Right Side Pyramid:\n");
+    for (i = rows; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    // 4. Inverse Left Side Pyramid
+    printf("\n4. Inverse Left Side Pyramid:\n");
+    for (i = rows; i >= 1; i--) {
+        for (j = 1; j <= rows - i; j++) {
+            printf(" ");
+        }
+        for (j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+    </pre>
+ <div>
+    <img src="you.png" alt="Output for pattern" width="300px" height="300px">
+ </div>
+</body>
+</html>
